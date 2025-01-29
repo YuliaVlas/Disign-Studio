@@ -1,0 +1,39 @@
+.title {
+    font-size: $title-size;
+    font-weight: $first-weight;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 2.375rem;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .title {
+        font-size: 1.7rem;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .title {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+}

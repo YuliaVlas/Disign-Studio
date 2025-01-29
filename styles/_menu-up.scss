@@ -1,0 +1,72 @@
+.menu-up {
+    display: flex;
+    align-items: center;
+    &__item {
+        color: $second-color;
+        font-size: 1.25rem;
+        &:not(:last-child)::after {
+            content: " ";
+            display: inline-block;
+            width: 30px;
+            height: 1px;
+            margin: 0 45px;
+            vertical-align: middle;
+            background-color: $second-color;
+        }
+        &:hover {
+            color: #FFAC1C;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .menu-up {
+        &__item {
+            font-size: 1.125rem;
+            &:not(:last-child)::after {
+                width: 28px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-up {
+        &__item {
+            font-size: 1.0625rem;
+            &:not(:last-child)::after {
+                margin: 0 35px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .menu-up {
+        &__item {
+            font-size: 0.9375rem;
+            &:not(:last-child)::after {
+                margin: 0 25px;
+                width: 25px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .menu-up {
+        &__item {
+            font-size: 0.9rem;
+            &:not(:last-child)::after {
+                margin: 0 20px;
+                width: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu-up {
+        margin: 15px auto;
+    }
+}

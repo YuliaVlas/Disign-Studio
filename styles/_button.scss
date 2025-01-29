@@ -1,0 +1,64 @@
+.button {
+    display: block;
+    &.button--yellow {
+        @include button-styles;
+        background-color: #FFBE49;
+        border-color: #FFBE49;
+        &.button--yellow:hover {
+            background-color: #cade32;
+            border-color: #cade32;
+            transition: 1s;
+        }
+    }
+    &.button--white {
+        @include button-styles;
+        color: $main-color;
+    }
+    &__arrow {
+        display: inline-block;
+        background-image: url(../img/arrow.svg);
+        background-repeat: no-repeat;
+        width: 57px;
+        height: 20px;
+        background-size: contain;
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .button {
+        &.button--small {
+            width: 200px;
+            height: 46px;
+            line-height: 46px;
+            font-size: 0.875rem;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .button {
+        &.button--yellow {
+            width: 200px;
+            height: 46px;
+            line-height: 46px;
+            font-size: 0.875rem;
+            margin: 0 auto;
+        }
+        &.button--white {
+            width: 200px;
+            height: 46px;
+            line-height: 46px;
+            font-size: 0.875rem;
+            margin: 0 auto;
+        }
+        &.button--small {
+            width: 150px;
+            height: 35px;
+            line-height: 35px;
+            font-size: 0.7rem;
+            margin-bottom: 15px;
+        }
+    }
+}

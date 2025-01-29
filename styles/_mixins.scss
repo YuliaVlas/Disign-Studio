@@ -1,0 +1,33 @@
+@mixin button-styles {
+    border: 2px solid;
+    border-radius: 30px;
+    width: 264px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+    font-size: $button-size;
+    font-weight: $first-weight;
+}
+
+@mixin paragraph-styles {
+    font-size: $paragraph-size;
+    font-weight: $second-weight;
+    margin: 0 auto 60px;
+    max-width: 580px;
+}
+
+@mixin icon-styles {
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+}
+
+@mixin pseudo-styles {
+    content: " ";
+    display: inline-block;
+    width: 1.5px;
+    height: 52px;
+    background-color: #B3B3B3;
+    margin-top: 100px;
+}

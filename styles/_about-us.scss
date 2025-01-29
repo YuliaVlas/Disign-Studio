@@ -1,0 +1,96 @@
+.about-us {
+    padding: 100px 0;
+    background-color: #F0F0F0;
+    &__image {
+        width: 100%;
+        max-width: 760px;
+    }
+    &__paragraph {
+        font-size: 1.25rem;
+        font-weight: $second-weight;
+        max-width: 760px;
+        margin: 30px auto 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about-us {
+        padding: 80px 0;
+        &__image {
+            max-width: 636px;
+        }
+        &__paragraph {
+            font-size: 1.125rem;
+            max-width: 637px;
+            margin: 40px auto 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-us {
+        padding: 70px 0;
+        &__paragraph {
+            margin: 35px auto 0;
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .about-us {
+        &__image {
+            max-width: 600px;
+        }
+        &__paragraph {
+            font-size: 1rem;
+            max-width: 600px;
+            margin: 35px auto 0;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-us {
+        padding: 60px 0;
+        &__image {
+            max-width: 500px;
+        }
+        &__paragraph {
+            max-width: 500px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about-us {
+        &__image {
+            max-width: 450px;
+        }
+        &__paragraph {
+            max-width: 450px;
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .about-us {
+        &__image {
+            max-width: 400px;
+        }
+        &__paragraph {
+            max-width: 400px;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .about-us {
+        padding: 50px 0;
+        &__image {
+            max-width: 350px;
+        }
+        &__paragraph {
+            max-width: 350px;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.stage-icon {
+    border: 2px solid #F0BC64;
+    border-radius: 50%;
+    border-color: #F0BC64;
+    margin-right: 45px;
+    @include icon-styles;
+    &.stage-icon--sketch {
+        background-image: url(../img/stage1.png);
+    }
+    &.stage-icon--visual {
+        background-image: url(../img/stage2.png);
+    }
+    &.stage-icon--document {
+        background-image: url(../img/stage3.png);
+    }
+    &.stage-icon--control {
+        background-image: url(../img/stage4.png);
+    }
+    &:not(.stage-icon--control)::after {
+        @include pseudo-styles;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .stage-icon {
+        height: 80px;
+        width: 80px;
+        margin: 0 30px;
+        &:not(.stage-icon--control)::after {
+            height: 70px;
+            margin-top: 79px;
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .stage-icon {
+        height: 60px;
+        width: 60px;
+        margin: 0 25px;
+        &:not(.stage-icon--control)::after {
+            margin-top: 60px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .stage-icon {
+        height: 50px;
+        width: 50px;
+        &:not(.stage-icon--control)::after {
+            margin-top: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .stage-icon {
+        height: 40px;
+        width: 40px;
+        &:not(.stage-icon--control)::after {
+            height: 90px;
+            width: 1px;
+            margin-top: 40px;
+        }
+    }
+}

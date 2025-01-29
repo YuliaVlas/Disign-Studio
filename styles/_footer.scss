@@ -1,0 +1,38 @@
+        .footer {
+            background-color: #434343;
+            padding: 100px 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        @media screen and (max-width: 1024px) {
+            .footer {
+                padding: 80px 0;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .footer {
+                padding: 70px 0;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            .footer {
+                padding: 60px 0;
+            }
+        }
+        
+        @media screen and (max-width: 500px) {
+            .footer {
+                padding: 50px 0;
+            }
+        }
+        
+        @media screen and (max-width: 430px) {
+            .footer {
+                padding: 40px 0;
+                flex-direction: column;
+                align-content: space-around;
+            }
+        }

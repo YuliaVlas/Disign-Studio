@@ -1,0 +1,23 @@
+.service-icon {
+    border: 2px solid #F0BC64;
+    border-radius: 50%;
+    border-color: #F0BC64;
+    margin: 0 auto 40px;
+    @include icon-styles;
+    &.service-icon--project {
+        background-image: url(../img/img1.png);
+    }
+    &.service-icon--house {
+        background-image: url(../img/img2.png);
+    }
+    &.service-icon--supervision {
+        background-image: url(../img/img3.png);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .service-icon {
+        height: 80px;
+        width: 80px;
+    }
+}

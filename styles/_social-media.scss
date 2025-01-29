@@ -1,0 +1,77 @@
+.social-media {
+    display: flex;
+    justify-content: center;
+    &__icon {
+        font-size: 1.7rem;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50%;
+        color: #434343;
+        background-color: $second-color;
+        text-align: center;
+        transition: .5s;
+    }
+    &__icon:not(:last-child) {
+        margin-right: 40px;
+    }
+    &__icon:hover {
+        transform: scale(1.5);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .social-media {
+        &__icon {
+            font-size: 1.7rem;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .social-media {
+        &__icon {
+            font-size: 1.7rem;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .social-media {
+        &__icon {
+            font-size: 1.5rem;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+        }
+        &__icon:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .social-media {
+        &__icon {
+            font-size: 1.3rem;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+        }
+        &__icon:not(:last-child) {
+            margin-right: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .social-media {
+        padding: 20px 0;
+    }
+}

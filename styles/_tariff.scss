@@ -1,0 +1,211 @@
+.tariff {
+    display: flex;
+    flex-direction: column;
+    max-width: 364px;
+    width: calc((100% - 2 * 36px) / 3);
+    background-color: $second-color;
+    padding: 40px 0;
+    position: relative;
+    height: 466px;
+    border-radius: 10px;
+    justify-content: space-between;
+    &:not(:last-of-type) {
+        margin-right: 36px;
+    }
+    &:nth-child(2) {
+        max-width: 376px;
+        height: 509px;
+        padding: 61px 0 62px;
+        margin-top: -20px;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+    &__item {
+        font-size: 1.375rem;
+        font-weight: $first-weight;
+        margin-bottom: 25px;
+    }
+    &__price {
+        display: block;
+        font-family: 'Roboto Slab', Arial, sans-serif;
+        font-size: $title-size;
+        font-weight: $first-weight;
+        margin-bottom: 30px;
+    }
+    &.tariff--red {
+        &.tariff--red::before {
+            content: "%";
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: $second-color;
+            line-height: 32px;
+            text-align: center;
+            font-weight: $first-weight;
+            font-size: 1.125rem;
+            background-color: #F33F3F;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .tariff {
+        max-width: 300px;
+        width: calc((100% - 2 * 20px) / 3);
+        height: 448px;
+        justify-content: space-between;
+        &:not(:last-of-type) {
+            margin-right: 20px;
+        }
+        &:nth-child(2) {
+            max-width: 300px;
+            height: 488px;
+            padding: 60px 0;
+        }
+        &__item {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+        }
+        &__price {
+            font-size: 2.375rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tariff {
+        max-width: 580px;
+        width: 580px;
+        height: 448px;
+        justify-content: space-between;
+        &:not(:last-of-type) {
+            margin: 0 auto 50px;
+        }
+        &:nth-child(2) {
+            max-width: 580px;
+            height: 439px;
+            padding: 40px 0;
+        }
+        &.tariff--red {
+            &.tariff--red::before {
+                width: 44px;
+                height: 44px;
+                top: 17px;
+                line-height: 44px;
+                font-size: 1.375rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .tariff {
+        max-width: 500px;
+        width: 500px;
+        height: 400px;
+        padding: 35px 0;
+        &:not(:last-of-type) {
+            margin-bottom: 40px;
+        }
+        &:nth-child(2) {
+            max-width: 540px;
+            height: 425px;
+            padding: 35px 0;
+        }
+        &__item {
+            font-size: 1.125rem;
+            margin-bottom: 25px;
+        }
+        &__price {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .tariff {
+        max-width: 450px;
+        width: 450px;
+        height: 350px;
+        padding: 30px 0;
+        &:not(:last-of-type) {
+            margin-bottom: 35px;
+        }
+        &:nth-child(2) {
+            max-width: 500px;
+            height: 400px;
+            padding: 30px 0;
+        }
+        &__item {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+        &__price {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .tariff {
+        max-width: 430px;
+        width: 430px;
+        height: 330px;
+        padding: 25px 0;
+        &:not(:last-of-type) {
+            margin-bottom: 30px;
+        }
+        &:nth-child(2) {
+            max-width: 430px;
+            height: 320px;
+            padding: 25px 0;
+        }
+        &__price {
+            font-size: 1.7rem;
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .tariff {
+        max-width: 400px;
+        width: 400px;
+        height: 350px;
+        padding: 20px 0;
+        &:not(:last-of-type) {
+            margin-bottom: 25px;
+        }
+        &:nth-child(2) {
+            max-width: 400px;
+            height: 400px;
+            padding: 20px 0;
+        }
+        &__price {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .tariff {
+        max-width: 370px;
+        width: 370px;
+        &:nth-child(2) {
+            max-width: 370px;
+            height: 400px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .tariff {
+        max-width: 350px;
+        width: 350px;
+        &:nth-child(2) {
+            max-width: 350px;
+            height: 370px;
+        }
+    }
+}

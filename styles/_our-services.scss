@@ -1,0 +1,31 @@
+.our-services {
+    padding: 100px 0;
+    &.paragraph {
+        max-width: 580px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .our-services {
+        padding: 80px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .our-services {
+        padding: 70px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .our-services {
+        padding: 60px 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .our-services {
+        padding: 50px 0;
+    }
+}

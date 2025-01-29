@@ -1,0 +1,85 @@
+.service {
+    max-width: 335px;
+    width: calc((100% - 2 * 90px) / 3);
+    &:not(:last-of-type) {
+        margin-right: 90px;
+    }
+    &__item {
+        font-size: 1.125rem;
+        font-weight: $first-weight;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    &__paragraph {
+        font-size: 0.875rem;
+        font-weight: $second-weight;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .service {
+        max-width: 255px;
+        width: calc((100% - 2 * 95px) / 3);
+        &:not(:last-of-type) {
+            margin-right: 95px;
+        }
+        &__item {
+            font-size: 1rem;
+            margin-top: 30px;
+        }
+        &__paragraph {
+            font-size: 0.75rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .service {
+        max-width: 580px;
+        width: 580px;
+        &:not(:last-of-type) {
+            margin: 0 0 50px;
+        }
+        &__item {
+            font-size: 1rem;
+            margin-top: 30px;
+        }
+        &__paragraph {
+            font-size: 0.75rem;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .service {
+        max-width: 500px;
+        width: 500px;
+        &:not(:last-of-type) {
+            margin: 0 0 40px;
+        }
+        &__item {
+            font-size: 0.9rem;
+            margin-top: 25px;
+        }
+        &__paragraph {
+            font-size: 0.65rem;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .service {
+        max-width: 350px;
+        width: 350px;
+        &:not(:last-of-type) {
+            margin: 0 0 30px;
+        }
+        &__item {
+            font-size: 0.8rem;
+            margin-top: 20px;
+        }
+        &__paragraph {
+            font-size: 0.6rem;
+        }
+    }
+}

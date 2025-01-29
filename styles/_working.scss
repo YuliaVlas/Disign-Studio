@@ -1,0 +1,27 @@
+.working {
+    padding: 100px 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .working {
+        padding: 80px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .working {
+        padding: 70px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .working {
+        padding: 60px 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .working {
+        padding: 50px 0;
+    }
+}
